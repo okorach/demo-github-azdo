@@ -58,7 +58,10 @@ steps:
         sonar.projectName=GitHub / AzDO / .Net Core
         sonar.verbose=true
         sonar.analysis.buildNumber=$(Build.BuildId)
-
+      
+      # sonar.pullrequest.key=$(System.PullRequest.PullRequestId)
+      # sonar.pullrequest.branch=$(System.PullRequest.SourceBranch)
+    
   - task: DotNetCoreCLI@2
     displayName: 'dotnet build'
     inputs:
