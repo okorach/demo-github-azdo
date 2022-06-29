@@ -1,3 +1,4 @@
 project/obj/
 project/bin/
 *.log
+.github/.DS_Store
