@@ -48,13 +48,16 @@ steps:
       scannerMode: 'MSBuild'
 
       # Define your sonar.projectKey here
-      projectKey: 'demo:azdo-dotnetcore'
+      projectKey: 'demo:github-azdo-dotnetcore'
 
       # Add the analysis specific properties here like
       # sonar.exclusions etc...
       # sonar.analysis.* is an example of pipeline metadata sent to SonarQube
+
+      #  sonar.pullrequest.key=$(System.PullRequest.PullRequestId)
+      #  sonar.pullrequest.branch=$(System.PullRequest.SourceBranch)
       extraProperties: |
-        sonar.projectName=AzDO / .Net Core
+        sonar.projectName=GitHub / AzDO / .Net Core
         sonar.verbose=true
         sonar.analysis.buildNumber=$(Build.BuildId)
 
