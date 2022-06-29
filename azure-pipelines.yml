@@ -54,8 +54,6 @@ steps:
       # sonar.exclusions etc...
       # sonar.analysis.* is an example of pipeline metadata sent to SonarQube
 
-      #  sonar.pullrequest.key=$(System.PullRequest.PullRequestId)
-      #  sonar.pullrequest.branch=$(System.PullRequest.SourceBranch)
       extraProperties: |
         sonar.projectName=GitHub / AzDO / .Net Core
         sonar.verbose=true
